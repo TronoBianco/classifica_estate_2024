@@ -3,8 +3,17 @@
 <head>
 <link rel='stylesheet' href='style.css'>
 <h1><center>Statistiche: tronza</center></h1>
-<center><img src='tronza.png'></center>
-</head><br><br><center><table id='statistiche' border='1' class='dataframe'>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body><center><div id="myPlot" style="width:100%;max-width:700px"></div><script>
+const xArray = [1, 2]
+const yArray = [1500, 1485];const data = [{
+x:xArray,
+y:yArray,
+marker: {color:"rgba(0,0,255,0.6)"}
+}];const layout = {title:"Progressione: tronza"};
+Plotly.newPlot("myPlot", data, layout);
+</script></head><br><br><center><table id='statistiche' border='1' class='dataframe'>
 <tr><td><b>Partite fatte</b></td><td>1</td></tr>
 <tr><td><b>Partite vinte</b></td><td>0 (0.0%)</td></tr>
 <tr><td><b>Record PELO</b></td><td>1500</td></tr>
